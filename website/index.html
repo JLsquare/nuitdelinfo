@@ -1,13 +1,48 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr" class="w-screen">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+  <body class="overflow-x-hidden">
+    <div class="absolute flex justify-center w-screen">
+      <div class="w-full pt-6 md:pl-6 md:block flex justify-center">
+        <h1 class="font-title text-5xl">Evergreen</h1>
+      </div>
+    </div>
+
+    <!-- Section part 1 -->
+    <section class="h-screen relative">
+      <!-- upper block-->
+      <div class="upper-triangle dot-pattern">
+      </div>
+
+      <div class="grid grid-cols-[7fr,5fr] h-screen rellax -z-10" data-rellax-speed="-10">
+        <div class="flex flex-col justify-center pl-6">
+          <h1 class="font-display md:text-8xl text-5xl uppercase font-black md:pl-12">Le changement climatique arrive vite</h1>
+          <p class="font-body text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
+        </div>
+        <div>
+          <div id="hero-model"></div>
+        </div>
+      </div>
+
+      <div class="absolute down-transition-triangle bg-primary z-10">
+
+      </div>
+    </section>
+
+    <!-- timer section -->
+    <div class="z-10 relative w-full">
+      <section class="h-screen bg-primary">
+      </section>
+    </div>
+
+    <script type="module" src="./src/main.js"></script>
   </body>
 </html>
