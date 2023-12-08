@@ -13,6 +13,11 @@ export function initQuestionnaire() {
 
     const response4Element = document.getElementById("response4");
     response4Element.addEventListener("click", () => validAnswer(3));
+
+    const nextQuestionElement = document.getElementById("next-question");
+    nextQuestionElement.addEventListener("click", () => createQuestionnaire());
+
+    createQuestionnaire();
 }
 
 async function createQuestionnaire() {
