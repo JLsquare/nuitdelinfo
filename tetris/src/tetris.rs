@@ -13,6 +13,7 @@ pub struct TetrisGame {
     current_piece_position: Position,
     current_piece: pieces::Piece,
     current_rotation: u8,
+    score: u32,
 }
 
 impl TetrisGame {
@@ -22,7 +23,12 @@ impl TetrisGame {
             current_piece_position: Position { x: 4, y: 0 },
             current_piece: pieces::Pieces::new().get_random_piece(),
             current_rotation: 0,
+            score: 0,
         }
+    }
+
+    pub fn is_game_over(&self) -> bool {
+        self.matrix[0].iter().any(|&value| value != 0)
     }
 
     pub fn move_piece(&mut self, direction: &str) {
@@ -173,6 +179,14 @@ impl TetrisGame {
             }
         }
 
+        match rows_to_remove.len() {
+            1 => self.score += 100,
+            2 => self.score += 300,
+            3 => self.score += 500,
+            4 => self.score += 800,
+            _ => (),
+        }
+
         for row in rows_to_remove {
             self.matrix.remove(row);
             self.matrix.insert(0, vec![0; 10]);
@@ -195,7 +209,7 @@ impl TetrisGame {
         if self.is_bottom_or_down_collision() {
             self.apply_piece();
             self.current_piece = pieces::Pieces::new().get_random_piece();
-            self.current_piece_position = Position { x: 5, y: 0 };
+            self.current_piece_position = Position { x: 4, y: 0 };
             self.current_rotation = 0;
         } else {
             self.current_piece_position.y += 1;
@@ -219,5 +233,9 @@ impl TetrisGame {
         }
 
         matrix
+    }
+
+    pub fn get_score(&self) -> u32 {
+        self.score
     }
 }
