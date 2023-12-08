@@ -5,7 +5,16 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        title: ['"Aquire"', 'sans-serif'],
+      },
+      colors: {
+        primary: {
+          DEFAULT: '#52B788',
+        }
+      }
+    }
   },
   plugins: [],
 }
