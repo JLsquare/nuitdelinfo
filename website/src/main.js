@@ -1,17 +1,20 @@
 import '../style/style.css';
 import '../style/counter.css';
 import Rellax from 'rellax';
+import AOS from 'aos';
 import * as THREE from 'three';
 import { OBJLoader } from 'three/examples/jsm/loaders/OBJLoader.js';
 import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js';
 
 import { startCooldownClock } from "./finalCountdown.js";
+import {initScrollManager} from "./scrollManager.js";
 
 
 const objUrl = 'model/low-poly-mill.obj';
 const mtlUrl = 'model/low-poly-mill.mtl';
 
 let rellax = new Rellax('.rellax');
+AOS.init();
 
 
 // Threejs
@@ -25,7 +28,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     const canvas = document.createElement('canvas');
     canvas.width = canvasWidth;
     canvas.height = canvasWidth;
-    console.log(canvasWidth, canvasHeight);
 
     heroModelContainer.appendChild(canvas);
 
@@ -68,6 +70,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         renderer.render(scene, camera);
     }
 
-    startCooldownClock()
+    startCooldownClock();
+    initScrollManager();
 });
 
