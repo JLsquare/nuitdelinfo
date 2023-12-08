@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let playerId = null;
     let enemyTimeouts = {};
 
-    const socket = new WebSocket('ws://127.0.0.1:8080/ws/');
+    const socket = new WebSocket(`ws://${window.location.host}/ws/`);
 
     socket.addEventListener('open', function(event) {
         console.log("Connecté au serveur WebSocket");
