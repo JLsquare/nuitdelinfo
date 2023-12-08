@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown</title>
+    <script>
+        // Set the target date for the ecological end of the world
+        const targetDate = new Date("2030-01-01");
+
+        // Function to calculate the time remaining
+    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Creepster">
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-size: 50px;
+            font-weight: bold;
+            color: #000000;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 0px;
+            padding-top: 0px;
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Compte à rebours de l'épuisement des ressources de la Terre</h1>
+    <script>
+        function showTimeRemaining() {
+            // document.getElementById("countdown-text").innerHTML = calculateTimeRemaining();
+            // animation effect in caracters
+            var timeRemaining = calculateTimeRemaining();
+            /*
+            timeRemaining.split("").forEach(function (char, index) {
+                setTimeout(function () {
+                    if (char === ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]) {
+                        document.getElementById("countdown-text").innerHTML += char;
+                    } else {
+                        document.getElementById("countdown-text").innerHTML += "<span>" + char + "</span>";
+                    }
+                }, 100 * index);
+            });
+            */
+            document.getElementById("countdown-text").innerHTML = timeRemaining;
+        }
+
+        setInterval(showTimeRemaining, 100);
+    </script>
+</body>
+</html>

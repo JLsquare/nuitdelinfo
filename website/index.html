@@ -5,7 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@500&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
@@ -23,12 +23,12 @@
       </div>
 
       <div class="grid grid-cols-[7fr,5fr] h-screen rellax -z-10" data-rellax-speed="-10">
-        <div class="flex flex-col justify-center pl-6">
-          <h1 class="font-display md:text-8xl text-5xl uppercase font-black md:pl-12">Le changement climatique arrive vite</h1>
+        <div class="flex flex-col justify-center pl-6 md:pl-12">
+          <h1 class="font-display md:text-8xl text-5xl uppercase font-black">Le changement climatique arrive vite</h1>
           <p class="font-body text-2xl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.</p>
         </div>
-        <div>
-          <div id="hero-model"></div>
+        <div class="md:flex flex-col justify-center items-center hidden h-screen overflow-x-hidden">
+          <div id="hero-model" class="w-[80%]"></div>
         </div>
       </div>
 
@@ -39,9 +39,47 @@
 
     <!-- timer section -->
     <div class="z-10 relative w-full">
-      <section class="h-screen bg-primary">
+      <section class="h-screen flex justify-center items-center transition1-bg">
+        <div class="w-[min(90%,1000px)]">
+          <div class="flex flex-col text-white font-black gap-y-8 rellax" data-rellax-speed="3">
+            <p class="md:text-5xl text-2xl self-start">Nous avons encore</p>
+            <p id="countdown-text" class="lg:text-8xl text-4xl font-mono self-center"></p>
+            <p class="md:text-5xl text-2xl self-end">pour agir</p>
+          </div>
+        </div>
       </section>
     </div>
+
+    <!-- transition -->
+    <div class="z-10 relative w-full">
+      <section class="h-[50vh] flex justify-center transition1-bg">
+        <div class="text-white text-5xl">
+          <p>ou sinon...</p>
+        </div>
+      </section>
+    </div>
+
+    <!-- consequences section -->
+    <div class="z-10 relative w-full">
+      <section class="h-screen flex justify-center items-center bg-neutral-800">
+        <div class="absolute up-transition-triangle transition1-bg">
+
+        </div>
+
+        <div class="w-[min(90%,1700px)]">
+          <div class="grid md:grid-cols-2 grid-cols-1">
+            <div class="pr-4">
+              <img src="https://picsum.photos/1920/1080">
+            </div>
+            <div>
+              <span class="font-display text-5xl">La montée des eaux</span>
+                <p class="font-body text-2xl"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
 
     <script type="module" src="./src/main.js"></script>
   </body>

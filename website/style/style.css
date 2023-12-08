@@ -52,3 +52,11 @@
     left: 0;
     transform: rotateX(180deg);
 }
+
+.up-transition-triangle {
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 20vh;
+}
