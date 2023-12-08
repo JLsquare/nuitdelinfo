@@ -9,6 +9,7 @@ import { MTLLoader } from 'three/examples/jsm/loaders/MTLLoader.js';
 
 import { startCooldownClock } from "./finalCountdown.js";
 import {initScrollManager} from "./scrollManager.js";
+import {initQuestionnaire} from "./questionnaire.js";
 
 
 const objUrl = 'model/low-poly-mill.obj';
@@ -73,5 +74,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     startCooldownClock();
     initScrollManager();
+    initQuestionnaire();
 });
 

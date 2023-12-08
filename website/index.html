@@ -180,11 +180,36 @@
             </div>
           </div>
         </div>
+
+
+        <div class="absolute down-transition-triangle bg-primary">
+        </div>
       </section>
     </div>
 
+    <!-- Questions -->
+    <div class="z-10 relative w-full">
+      <section class="flex justify-center items-center bg-primary pt-[10vh] pb-[10vh]">
+        <div class="w-[min(90%,1700px)] grid grid-cols-2 gap-x-8">
+          <div class="">
+            <div class="flex justify-between">
+              <h1 class="font-display text-5xl font-black small-caps lowercase">Question</h1>
+              <button id="next-question" class="ml-4 bg-white text-black font-display text-5xl font-black small-caps lowercase hover:opacity-90 rounded p-2">Suivante</button>
+            </div>
+            <p id="question" class="font-body text-2xl">question</p>
+          </div>
+          <div class="grid grid-rows-4 gap-y-8">
+            <button id="response1" class="bg-white text-black font-display text-2xl font-black hover:opacity-90 rounded-full">Réponse 1</button>
+            <button id="response2" class="bg-white text-black font-display text-2xl font-black hover:opacity-90 rounded-full">Réponse 2</button>
+            <button id="response3" class="bg-white text-black font-display text-2xl font-black hover:opacity-90 rounded-full">Réponse 3</button>
+            <button id="response4" class="bg-white text-black font-display text-2xl font-black hover:opacity-90 rounded-full">Réponse 4</button>
+          </div>
+        </div>
+        <p id="explaination">
 
-
+        </p>
+      </section>
+    </div>
 
     <script type="module" src="./src/main.js"></script>
   </body>
