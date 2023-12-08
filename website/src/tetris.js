@@ -1,5 +1,3 @@
-import '../style/style.css';
-
 document.addEventListener('DOMContentLoaded', function() {
     const playerCanvas = document.getElementById('playerCanvas');
     const context = playerCanvas.getContext('2d');
