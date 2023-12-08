@@ -1,5 +1,6 @@
 import '../style/style.css';
 import '../style/counter.css';
+import '../404.html';
 import Rellax from 'rellax';
 import AOS from 'aos';
 import * as THREE from 'three';
