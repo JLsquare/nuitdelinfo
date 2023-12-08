@@ -32,18 +32,21 @@ async fn main() -> std::io::Result<()> {
     let questions = serde_json::from_str::<QuizzEntries>(questions).unwrap();
     let questions = Data::new(questions);
 
-
-    let cors = actix_cors::Cors::default()
-        .allow_any_origin()
-        .allow_any_method()
-        .allow_any_header();
-
-    HttpServer::new(move || App::new().wrap(cors).service(get_question).app_data(questions.clone()))
-        .bind("0.0.0.0:8000")
-        .unwrap()
-        .run()
-        .await
-        .unwrap();
+    HttpServer::new(move || {
+        let cors = actix_cors::Cors::default()
+            .allow_any_origin()
+            .allow_any_method()
+            .allow_any_header();
+        App::new()
+            .wrap(cors)
+            .service(get_question)
+            .app_data(questions.clone())
+    })
+    .bind("0.0.0.0:8000")
+    .unwrap()
+    .run()
+    .await
+    .unwrap();
 
     Ok(())
 }
