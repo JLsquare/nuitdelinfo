@@ -68,6 +68,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function createEnemyCanvas(id) {
+        const totalEnemyCanvases = document.querySelectorAll('[id^="enemyCanvas-"]').length;
+
+        if (totalEnemyCanvases >= 4) {
+            return;
+        }
+
         let newCanvas = document.createElement('canvas');
         newCanvas.id = `enemyCanvas-${id}`;
         newCanvas.width = 200;
