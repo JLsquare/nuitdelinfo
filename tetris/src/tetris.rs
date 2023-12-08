@@ -34,6 +34,7 @@ impl TetrisGame {
     pub fn move_piece(&mut self, direction: &str) {
         match direction {
             "ArrowLeft" | "ArrowRight" | "ArrowDown" => self.move_direction(direction),
+            "ArrowUp" => self.rotate_piece(),
             "r" => self.rotate_piece(),
             _ => (),
         }

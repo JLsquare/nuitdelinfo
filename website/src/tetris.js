@@ -1,3 +1,5 @@
+import '../style/style.css';
+
 document.addEventListener('DOMContentLoaded', function() {
     const playerCanvas = document.getElementById('playerCanvas');
     const context = playerCanvas.getContext('2d');
@@ -68,6 +70,12 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function createEnemyCanvas(id) {
+        const totalEnemyCanvases = document.querySelectorAll('[id^="enemyCanvas-"]').length;
+
+        if (totalEnemyCanvases >= 4) {
+            return;
+        }
+
         let newCanvas = document.createElement('canvas');
         newCanvas.id = `enemyCanvas-${id}`;
         newCanvas.width = 200;
