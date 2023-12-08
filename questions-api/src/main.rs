@@ -38,7 +38,7 @@ async fn main() -> std::io::Result<()> {
         .allow_any_method()
         .allow_any_header();
 
-    HttpServer::new(move || App::new().warp(cors).service(get_question).app_data(questions.clone()))
+    HttpServer::new(move || App::new().wrap(cors).service(get_question).app_data(questions.clone()))
         .bind("0.0.0.0:8000")
         .unwrap()
         .run()
