@@ -1,0 +1,147 @@
+{
+    "questions": [
+        {
+            "question": "Quel gaz est principalement responsable du changement climatique?",
+            "options": [
+                "Oxygène",
+                "Azote",
+                "Dioxyde de carbone",
+                "Hydrogène"
+            ],
+            "answer": 2,
+            "explanation": "Le dioxyde de carbone (CO2) est le principal gaz à effet de serre responsable du changement climatique."
+        },
+        {
+            "question": "Quelle est la principale source humaine d'émissions de gaz à effet de serre?",
+            "options": [
+                "Éruptions volcaniques",
+                "Déforestation",
+                "Émissions industrielles",
+                "Respiration humaine"
+            ],
+            "answer": 2,
+            "explanation": "Les activités industrielles libèrent d'importantes quantités de gaz à effet de serre, contribuant au changement climatique."
+        },
+        {
+            "question": "Qu'est-ce que l'effet de serre?",
+            "options": [
+                "Réchauffement de la stratosphère",
+                "Piégeage de la chaleur par l'atmosphère",
+                "Refroidissement global de la planète",
+                "Fusion des glaciers"
+            ],
+            "answer": 1,
+            "explanation": "L'effet de serre est le processus par lequel l'atmosphère retient la chaleur du soleil, contribuant ainsi au réchauffement de la Terre."
+        },
+        {
+            "question": "Quel secteur est responsable de la plus grande part des émissions mondiales de méthane?",
+            "options": [
+                "Agriculture",
+                "Transport",
+                "Industrie pétrolière et gazière",
+                "Décharges"
+            ],
+            "answer": 0,
+            "explanation": "L'agriculture, en particulier l'élevage du bétail, est une source majeure d'émissions de méthane."
+        },
+        {
+            "question": "Quel phénomène climatique extrême est amplifié par le changement climatique?",
+            "options": [
+                "Éruptions volcaniques",
+                "Ouragans",
+                "Tremblements de terre",
+                "Tornades"
+            ],
+            "answer": 1,
+            "explanation": "Le changement climatique peut augmenter l'intensité des ouragans en raison du réchauffement des océans."
+        },
+        {
+            "question": "Quel accord international vise à lutter contre le changement climatique en limitant les émissions de gaz à effet de serre?",
+            "options": [
+                "Protocole de Kyoto",
+                "Traité de Paris",
+                "Accord de Genève",
+                "Charte de Stockholm"
+            ],
+            "answer": 1,
+            "explanation": "L'Accord de Paris est un accord mondial qui vise à limiter le réchauffement climatique en réduisant les émissions de gaz à effet de serre."
+        },
+        {
+            "question": "Quelle est la principale conséquence du réchauffement climatique sur les océans?",
+            "options": [
+                "Augmentation du niveau de la mer",
+                "Diminution de la salinité",
+                "Formation d'icebergs",
+                "Acidification accrue"
+            ],
+            "answer": 0,
+            "explanation": "Le réchauffement climatique provoque la fonte des glaciers et des calottes glaciaires, contribuant à l'élévation du niveau de la mer."
+        },
+        {
+            "question": "Quelle alternative d'énergie est souvent considérée comme une solution pour réduire les émissions de carbone?",
+            "options": [
+                "Charbon",
+                "Pétrole",
+                "Énergie solaire",
+                "Gaz naturel"
+            ],
+            "answer": 2,
+            "explanation": "L'énergie solaire est une source d'énergie propre qui ne produit pas de gaz à effet de serre lors de son utilisation."
+        },
+        {
+            "question": "Quel phénomène météorologique est associé au changement climatique et se caractérise par des périodes de fortes chaleurs prolongées?",
+            "options": [
+                "Blizzard",
+                "Canicule",
+                "Mousson",
+                "Tornade"
+            ],
+            "answer": 1,
+            "explanation": "Le changement climatique peut augmenter la fréquence et l'intensité des vagues de chaleur, provoquant des canicules plus fréquentes."
+        },
+        {
+            "question": "Quelle est la contribution des émissions de CO2 liées à la déforestation au changement climatique?",
+            "options": [
+                "Aucune contribution",
+                "Contribution mineure",
+                "Contribution significative",
+                "Contribution exclusive"
+            ],
+            "answer": 2,
+            "explanation": "La déforestation libère du dioxyde de carbone stocké dans les arbres, contribuant ainsi de manière significative au changement climatique."
+        },
+        {
+            "question": "Quel organisme est chargé de surveiller les changements climatiques à l'échelle mondiale?",
+            "options": [
+                "NASA",
+                "WHO",
+                "UNESCO",
+                "IMF"
+            ],
+            "answer": 0,
+            "explanation": "La NASA (National Aeronautics and Space Administration) joue un rôle clé dans la surveillance des changements climatiques grâce à ses satellites et à ses missions d'observation de la Terre."
+        },
+        {
+            "question": "Quelle est la principale source d'émissions de gaz à effet de serre dans le secteur des transports?",
+            "options": [
+                "Voitures électriques",
+                "Avions",
+                "Vélos",
+                "Voitures à essence"
+            ],
+            "answer": 3,
+            "explanation": "Les voitures à essence émettent du dioxyde de carbone lors de la combustion du carburant, contribuant aux émissions de gaz à effet de serre."
+        },
+        {
+            "question": "Quelle est l'importance des océans dans la régulation du climat?",
+            "options": [
+                "Aucune importance",
+                "Rôle mineur",
+                "Rôle majeur",
+                "Rôle exclusif"
+            ],
+            "answer": 2,
+            "explanation": "Les océans jouent un rôle crucial dans la régulation du climat en absorbant et en redistribuant la chaleur à travers le monde."
+        }
+    ]
+}
