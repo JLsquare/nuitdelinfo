@@ -33,7 +33,7 @@ async fn main() -> std::io::Result<()> {
     let questions = Data::new(questions);
 
     HttpServer::new(move || App::new().service(get_question).app_data(questions.clone()))
-        .bind("localhost:8080")
+        .bind("0.0.0.0:8000")
         .unwrap()
         .run()
         .await
