@@ -22,7 +22,7 @@ export function initQuestionnaire() {
 
 async function createQuestionnaire() {
     // make a get request at nuitinfo.feur.live/question
-    const response = await fetch("https://nuitinfo.feur.live/question");
+    const response = await fetch("http://nuitinfo.feur.live:8000/question");
     const data = await response.json();
 
     // create the questionnaire
