@@ -4,6 +4,7 @@ use serde::{Deserialize, Serialize};
 #[derive(Serialize, Deserialize, Clone)]
 pub struct Piece {
     pub matrix: Vec<Vec<u8>>,
+    pub color: u8,
 }
 
 impl Piece {
@@ -22,24 +23,31 @@ impl Pieces {
             pieces: vec![
                 Piece {
                     matrix: vec![vec![1, 1], vec![1, 1]],
+                    color: 1,
                 },
                 Piece {
                     matrix: vec![vec![1, 1, 1, 1]],
+                    color: 2,
                 },
                 Piece {
                     matrix: vec![vec![1, 1, 0], vec![0, 1, 1]],
+                    color: 3,
                 },
                 Piece {
                     matrix: vec![vec![0, 1, 1], vec![1, 1, 0]],
+                    color: 4,
                 },
                 Piece {
                     matrix: vec![vec![1, 0, 0], vec![1, 1, 1]],
+                    color: 5,
                 },
                 Piece {
                     matrix: vec![vec![0, 0, 1], vec![1, 1, 1]],
+                    color: 6,
                 },
                 Piece {
                     matrix: vec![vec![1, 1, 1], vec![0, 0, 1]],
+                    color: 7,
                 },
             ],
         }
